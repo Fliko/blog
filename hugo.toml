@@ -1,0 +1,51 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Fliko'
+theme = 'color-your-world'
+tite = 'Mc Siteface'
+
+[params]
+  description = "Fliko's Funhaus"
+  imgPath = "img"
+
+[params.author]
+  name = "Fliko"
+
+[params.style]
+  isDark = true
+  # Accent colors for dark and light mode respectively
+  darkAccent   = "#f3a530" # Default is "#1dbc91"
+  lightAccent  = "#1f676b" # Default is "#1f676b"
+
+  # More colors, pick as many as you want (not really sure if there's a limit)
+  # Apparently these may not show up on every modern browser (ie.: Firefox)
+  # There's no default value. Used here just as example
+  presets = [ "#1f676b", "#f3a530", "#902b37", "#1dbc91", "#754e85", "#7fc121", "#a8314a", "#ff7433", "#3e6728", "#c063bd" ]
+
+[params.social.centralized]
+  github = ["Fliko"]
+  linkedin = ["tracebaxter"]
+  #entry         = [ "username", "label (optional)" ]
+
+[params.notFound]
+  title         = "Page not found"
+  description   = "I cannot reach your page."
+  paragraph     = "My arms are too short."
+
+[languages]
+  [languages.en]
+  
+    languageName = "English"
+
+    [languages.en.menu]
+
+      [[languages.en.menu.main]]
+        name = "Posts"
+        weight = 1
+        url = "posts/"
+      
+      [[languages.en.menu.main]]
+        name = "Contact"
+        weight = 2
+        url = "contact/"
+
